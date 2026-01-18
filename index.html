@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music/music.mp3" type="audio/mp3">
+</audio>
+
+<!-- PAGE 1 -->
+<section class="page bg1 active" id="page1">
+  <h1>HAPPY BIRTHDAY 💖</h1>
+  <img src="images/photo1.jpg" class="main-img">
+  <button onclick="nextPage(2)">Continue 💕</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page bg2" id="page2">
+  <h2>The moments of you I love the most 💛</h2>
+
+  <div class="cards">
+    <div onclick="reveal(this,1)">📸 Click</div>
+    <div onclick="reveal(this,2)">📸 Click</div>
+    <div onclick="reveal(this,3)">📸 Click</div>
+    <div onclick="reveal(this,4)">📸 Click</div>
+    <div onclick="reveal(this,5)">📸 Click</div>
+  </div>
+
+  <button onclick="nextPage(3)">Next 💖</button>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page bg3" id="page3">
+  <h2>Beautiful Memories 💕</h2>
+
+  <div class="gallery">
+    <img src="images/photo1.jpg">
+    <img src="images/photo2.jpg">
+    <img src="images/photo3.jpg">
+    <img src="images/photo4.jpg">
+    <img src="images/photo5.jpg">
+  </div>
+
+  <button onclick="nextPage(4)">Read Message 💌</button>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page bg4" id="page4">
+  <div class="message">
+    <h2>My Love 💖</h2>
+    <p>
+      Happy Birthday to the most beautiful soul in my life.<br><br>
+      You make my world brighter just by being in it.<br>
+      Every smile of yours is my favorite gift.<br><br>
+      I wish you endless happiness and love 💕
+    </p>
+
+    <button onclick="restart()">Start Again 💫</button>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
